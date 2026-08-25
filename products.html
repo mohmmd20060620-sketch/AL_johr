@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جوهرة تعز مول - تصفح الطوابق والمحلات</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>جوهرة تعز مول - الحوبان</h1>
+        <p>تصفح المحلات والمنتجات حسب الطابق والمحل</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="products.html">تصنيفات المنتجات</a></li>
+                <li><a href="cart.html">سلة التسوق</a></li>
+                <li><a href="orders.html">سجل الطلبات</a></li>
+                <li><a href="login.html">تسجيل الدخول</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- اختيار الطابق -->
+        <section class="floors-navigation">
+            <h2>اختر الطابق للتصفح:</h2>
+            <div class="floor-buttons">
+                <button class="floor-btn active" data-floor="ground">Ground Floor - الطابق الأرضي</button>
+                <button class="floor-btn" data-floor="first">First Floor - الطابق الأول</button>
+                <button class="floor-btn" data-floor="second">Second Floor - الطابق الثاني</button>
+                <button class="floor-btn" data-floor="third">Third Floor - الطابق الثالث</button>
+            </div>
+        </section>
+
+        <!-- ================= الطابق الأرضي ================= -->
+        <section id="ground" class="floor-content active-floor">
+            <h2 class="floor-title">الطابق الأرضي: السوبرماركت والإلكترونيات والعطور</h2>
+            
+            <!-- أزرار اختيار المحل في الطابق الأرضي -->
+            <div class="shop-buttons">
+                <button class="shop-btn active" data-shop="shop-alkima">محل القمة للإلكترونيات</button>
+                <button class="shop-btn" data-shop="shop-perfumes">محل عالم العطور والساعات</button>
+                <button class="shop-btn" data-shop="shop-hyper">هايبر الجوهرة</button>
+                <button class="shop-btn" data-shop="shop-suber">سوبرماركت الجوهرة</button>
+                 <button class="shop-btn" data-shop="shop-rr">احدث حلاقة الشعر</button>
+            </div>
+
+            <!-- محتوى محلات الطابق الأرضي -->
+            <div id="shop-alkima" class="shop-content active-shop">
+                <h3>محل القمة للإلكترونيات</h3>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/150" alt="هاتف ذكي">
+                        <h4>هاتف سامسونج الحديث</h4>
+                        <p>السعر: 180,000 ريال</p>
+                        <button class="add-to-cart-btn">أضف للسلة</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/150" alt="سماعات بلوتوث">
+                        <h4>سماعات بلوتوث لاسلكية</h4>
+                        <p>السعر: 25,000 ريال</p>
+                        <button class="add-to-cart-btn">أضف للسلة</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="shop-perfumes" class="shop-content">
+                <h3>محل عالم العطور والساعات</h3>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/150" alt="عطر عود">
+                        <h4>عطر العود الملكي</h4>
+                        <p>السعر: 30,000 ريال</p>
+                        <button class="add-to-cart-btn">أضف للسلة</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/150" alt="ساعة يد">
+                        <h4>ساعة يد رجالية أنيقة</h4>
+                        <p>السعر: 45,000 ريال</p>
+                        <button class="add-to-cart-btn">أضف للسلة</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="shop-hyper" class="shop-content">
+                <h3>هايبر الجوهرة</h3>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/150" alt="سلة عصائر">
+                        <h4>طقم عصائر طبيعية متنوعة</h4>
+                        <p>السعر: 8,000 ريال</p>
+                        <button class="add-to-cart-btn">أضف للسلة</button>
+                    </div>
+                </div>
+            </div>
+
+          <div id="shop-suber" class="shop-content">
+    <h3>سوبرماركت الجوهرة</h3>
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="https://via.placeholder.com/150" alt="بسكويت سوبرماركت">
+            <h4>بسكويت سوبرماركت متنوعة</h4>
+            <p>السعر: 8,000 ريال</p>
+            <button class="add-to-cart-btn">أضف للسلة</button>
+        </div>
+    </div>
+</div>
+    <div id="shop-rr" class="shop-content">
+    <h3>احدث حلاقة الشعر</h3>       
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="https://via.placeholder.com/150" alt="بسكويت سوبرماركت">
+            <h4>بسكويت سوبرماركت متنوعة</h4>
+            <p>السعر: 8,000 ريال</p>
+            <button class="add-to-cart-btn">أضف للسلة</button>
+        </div>
+    </div>
+</div>
+
+        </section>
+
+        <!-- ================= الطابق الأول ================= -->
+        <section id="first" class="floor-content">
+            <h2 class="floor-title">الطابق الأول: الأزياء والموضة</h2>
+            
+            <!-- أزرار اختيار المحل في الطابق الأول -->
+            <div class="shop-buttons">
+                <button class="shop-btn active" data-shop="shop-elegance">محل الأناقة للجميع</button>
+                <button class="shop-btn" data-shop="shop-lady">محل سيدة تعز</button>
+                <button class="shop-btn" data-shop="shop-kids">محل عالم الأطفال</button>
+            </div>
+
+            <div id="shop-elegance" class="shop-content active-shop">
+                <h3>محل الأناقة للجميع (ملابس رجالية)</h3>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/150" alt="بدلة رسمية">
+                        <h4>بدلة رسمية فاخرة</h4>
+                        <p>السعر: 65,000 ريال</p>
+                        <button class="add-to-cart-btn">أضف للسلة</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/150" alt="قميص كاجوال">
+                        <h4>قميص قطني كاجوال</h4>
+                        <p>السعر: 16,000 ريال</p>
+                        <button class="add-to-cart-btn">أضف للسلة</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="shop-lady" class="shop-content">
+                <h3>محل سيدة تعز (أزياء نسائية)</h3>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/150" alt="عباية مطرزة">
+                        <h4>عباية خليجية مطرزة</h4>
+                        <p>السعر: 40,000 ريال</p>
+                        <button class="add-to-cart-btn">أضف للسلة</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="shop-kids" class="shop-content">
+                <h3>محل عالم الأطفال</h3>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/150" alt="طقم أطفال">
+                        <h4>طقم ملابس ولادي/بناتي</h4>
+                        <p>السعر: 18,000 ريال</p>
+                        <button class="add-to-cart-btn">أضف للسلة</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= الطابق الثاني ================= -->
+        <section id="second" class="floor-content">
+            <h2 class="floor-title">الطابق الثاني: الأحذية والجمال والمجوهرات</h2>
+            
+            <div class="shop-buttons">
+                <button class="shop-btn active" data-shop="shop-steps">محل خطوات للموضة</button>
+                <button class="shop-btn" data-shop="shop-beauty">محل الجمال الطبيعي</button>
+                <button class="shop-btn" data-shop="shop-gold">محل الذهب والمجوهرات</button>
+            </div>
+
+            <div id="shop-steps" class="shop-content active-shop">
+                <h3>محل خطوات للموضة (أحذية وحقائب)</h3>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/150" alt="حذاء رياضي">
+                        <h4>حذاء رياضي مريح</h4>
+                        <p>السعر: 22,000 ريال</p>
+                        <button class="add-to-cart-btn">أضف للسلة</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/150" alt="حقيبة جلدية">
+                        <h4>حقيبة جلدية نسائية</h4>
+                        <p>السعر: 28,000 ريال</p>
+                        <button class="add-to-cart-btn">أضف للسلة</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="shop-beauty" class="shop-content">
+                <h3>محل الجمال الطبيعي</h3>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/150" alt="مجموعة عناية">
+                        <h4>مجموعة العناية بالبشرة</h4>
+                        <p>السعر: 25,000 ريال</p>
+                        <button class="add-to-cart-btn">أضف للسلة</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="shop-gold" class="shop-content">
+                <h3>محل الذهب والمجوهرات</h3>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/150" alt="خاتم فضة">
+                        <h4>خاتم فضة عقيق يماني</h4>
+                        <p>السعر: 35,000 ريال</p>
+                        <button class="add-to-cart-btn">أضف للسلة</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= الطابق الثالث ================= -->
+        <section id="third" class="floor-content">
+            <h2 class="floor-title">الطابق الثالث: المطاعم والترفيه</h2>
+            
+            <div class="shop-buttons">
+                <button class="shop-btn active" data-shop="shop-food">مطاعم وكافيهات الجوهرة</button>
+                <button class="shop-btn" data-shop="shop-joy">ملاهي Joy Land للأطفال</button>
+            </div>
+
+            <div id="shop-food" class="shop-content active-shop">
+                <h3>مطاعم وكافيهات الجوهرة</h3>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/150" alt="وجبة برجر">
+                        <h4>وجبة برجر عائلي متكاملة</h4>
+                        <p>السعر: 12,000 ريال</p>
+                        <button class="add-to-cart-btn">أضف للسلة</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/150" alt="كابتشينو">
+                        <h4>مشروب كابتشينو ساخن</h4>
+                        <p>السعر: 3,000 ريال</p>
+                        <button class="add-to-cart-btn">أضف للسلة</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="shop-joy" class="shop-content">
+                <h3>ملاهي Joy Land للأطفال</h3>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/150" alt="كرت ألعاب">
+                        <h4>بطاقة شحن ألعاب (تغطية 10 ألعاب)</h4>
+                        <p>السعر: 15,000 ريال</p>
+                        <button class="add-to-cart-btn">أضف للسلة</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 جميع الحقوق محفوظة - جوهرة تعز مول (الحوبان)</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
