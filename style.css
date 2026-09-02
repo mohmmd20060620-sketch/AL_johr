@@ -1,68 +1,85 @@
-/* ضبط الخطوط العامة والخلفية */
+        /* ضبط الخطوط العامة والخلفية */
 body {
     font-family: 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
     background-color: #f4f6f9;
     color: #333;
+    
 }
 
 /* تنسيق الهيدر وقائمة التنقل Navigation */
 header {
     background-color: #2c3e50;
-    color: #ffffff; /* لون الخط والخطوط */
+    color: #ffffff;
     padding: 15px 20px;
-     text-align: center;
-   .divheader{
-     text-align: center;
+    text-align: center;
+}
+
+.divheader {
+    text-align: center;
     display: flex;
     justify-content: center;
-     
-    .imgheader{
-        text-align: center;
-        margin-right: 20px;
-        width: 100px;
-        height: 100px;
-        border-radius: 100%;
-    }
-
-
-   }
-    
+    align-items: center;
 }
 
-.صور-المنتجات{
+.divheader .imgheader {
+    text-align: center;
+    margin-right: 20px;
+
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+.صور-المنتجات {
     width: 200px;
     height: 200px;
-    
-    
 }
 
-.اسماء-المحلات{
-     text-align: center;
-     display: flex;
-     justify-content: center;
-     .شعار-المحلات{
+.اسماء-المحلات {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.اسماء-المحلات .شعار-المحلات {
     width: 100px;
     height: 100px;
     text-align: center;
-        margin-right: 20px;
-        width: 100px;
-        height: 100px;
-        border-radius: 100%;
-    
-} 
+    margin-right: 20px;
+    border-radius: 100%;
+}
 
-    
-    }
+/* الجداول الرئيسية */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #ffffff;
+}
 
-  
+.data-table caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: right;
+}
 
+.data-table th, .data-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+.data-table th {
+    background-color: #2c3e50;
+    color: white;
+}  
 
 nav ul {
     list-style-type: none;
     padding: 0;
-    margin: 15px 0 0 0;
     display: flex;
     justify-content: center;
     gap: 15px;
@@ -71,14 +88,17 @@ nav ul {
 nav ul li a {
     color: #ffffff;
     text-decoration: none;
-    padding: 8px 16px;
-    border-radius: 4px;
-    transition: background-color 0.3s;
+    padding:  15px;
+    border-radius: 20px;
+    
 }
 
-/* تأثير Hover على روابط التنقل */
 nav ul li a:hover {
     background-color: #1abc9c;
+}
+
+.pindex {
+    visibility: hidden;
 }
 
 /* تنسيق المحتوى الرئيسي */
@@ -86,17 +106,18 @@ main {
     padding: 20px;
     max-width: 900px;
     margin: 0 auto;
-    .videomain{
-        width: 500px;
-    }
+}
+
+main .videomain {
+    width: 500px;
 }
 
 /* النماذج Form Styling */
 .form-container {
     background: #ffffff;
     padding: 25px;
-    border-radius: 8px;
-    border: 1px solid #ddd;
+    border-radius: 30px;
+    border: 1px solid #960d0d;
     max-width: 400px;
     margin: 20px auto;
 }
@@ -114,7 +135,7 @@ main {
     width: 100%;
     padding: 8px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 100px;
     box-sizing: border-box;
 }
 
@@ -123,15 +144,14 @@ button {
     background-color: #3498db;
     color: white;
     padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
+    border-radius: 20px;
     cursor: pointer;
     font-size: 14px;
     transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #2980b9;
+    background-color: #021623;
 }
 
 /* شبكة المنتجات Product Cards Grid */
@@ -143,53 +163,33 @@ button:hover {
 
 .product-card {
     background: #ffffff;
-    border: 1px solid #e0e0e0;
+    border: 1px solid #93600e;
     border-radius: 8px;
     padding: 15px;
     width: 200px;
     text-align: center;
 }
 
-/* الجداول Data Accessible Tables */
-.data-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-    background: #ffffff;
-}
-
-.data-table caption {
-    font-weight: bold;
-    margin-bottom: 10px;
-    caption-side: top;
-    text-align: right;
-}
-
-.data-table th, .data-table td {
-    border: 1px solid #ddd;
-    padding: 12px;
-    text-align: center;
-}
-
-.data-table th {
-    background-color: #2c3e50;
-    color: white;
-}
-
 /* الفوتر */
 footer {
     text-align: center;
     padding: 15px;
-    background-color: #ecf0f1;
+    background-color: #0f9abc;
     margin-top: 30px;
 }
-/* أزرار تنقل الطوابق */
+
+/* أزرار تنقل الطوابق والمحلات */
 .floors-navigation {
     text-align: center;
     margin-bottom: 25px;
 }
 
-.floor-buttons {
+.floors-navigation a {
+    text-decoration: none;
+   margin-top: 10px;
+}
+
+.floor-buttons, .shop-buttons {
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -197,108 +197,29 @@ footer {
     margin-top: 10px;
 }
 
-.floor-btn {
+.floor-btn, .shop-btn {
     background-color: #7f8c8d;
     color: #fff;
     padding: 10px 18px;
-    border: none;
+    border-radius: 20px;
     border-radius: 20px;
     cursor: pointer;
     font-weight: bold;
+    
+        text-decoration: none;
+    
+   
     transition: all 0.3s ease;
+   
 }
 
-.floor-btn:hover {
+
+.floor-btn:hover, .shop-btn:hover {
     background-color: #1abc9c;
+   
 }
 
-.floor-btn.active {
+.floor-btn.active, .shop-btn.active {
     background-color: #8e44ad;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-/* التحكم بظهور الطوابق */
-.floor-content {
-    display: none; /* إخفاء جميع الطوابق افتراضياً */
-}
-
-.floor-content.active-floor {
-    display: block; /* إظهار الطابق المختار فقط */
-    animation: fadeIn 0.5s ease-in-out;
-}
-
-/* أقسام المحلات داخل الطابق */
-.shop-section {
-    background: #ffffff;
-    padding: 15px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    border-right: 4px solid #8e44ad;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-}
-
-.shop-section h3 {
-    margin-top: 0;
-    color: #2c3e50;
-}
-
-.floor-title {
-    color: #8e44ad;
-    border-bottom: 2px solid #8e44ad;
-    padding-bottom: 8px;
-    margin-bottom: 20px;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-/* أزرار المحلات داخل الطابق */
-.shop-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-    flex-wrap: wrap;
-    margin: 15px 0 20px 0;
-}
-
-.shop-btn {
-    background-color: #ecf0f1;
-    color: #2c3e50;
-    border: 1px solid #bdc3c7;
-    padding: 8px 14px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 13px;
-    font-weight: bold;
-    transition: all 0.2s ease;
-}
-
-.shop-btn:hover {
-    background-color: #3498db;
-    color: #ffffff;
-    border-color: #3498db;
-}
-
-.shop-btn.active {
-    background-color: #2980b9;
-    color: #ffffff;
-    border-color: #2980b9;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
-}
-
-/* إخفاء وإظهار كروت المحلات */
-.shop-content {
-    display: none; /* إخفاء المحلات افتراضياً */
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    border-right: 4px solid #8e44ad;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-}
-
-.shop-content.active-shop {
-    display: block; /* إظهار المحل المختار فقط */
-    animation: fadeIn 0.4s ease-in-out;
+   
 }
