@@ -1,11 +1,10 @@
-        /* ضبط الخطوط العامة والخلفية */
+/* ضبط الخطوط العامة والخلفية */
 body {
     font-family: 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
     background-color: #f4f6f9;
     color: #333;
-    
 }
 
 /* تنسيق الهيدر وقائمة التنقل Navigation */
@@ -26,7 +25,6 @@ header {
 .divheader .imgheader {
     text-align: center;
     margin-right: 20px;
-
     width: 100px;
     height: 100px;
     border-radius: 100%;
@@ -88,13 +86,34 @@ nav ul {
 nav ul li a {
     color: #ffffff;
     text-decoration: none;
-    padding:  15px;
+    padding: 15px;
     border-radius: 20px;
-    
 }
 
 nav ul li a:hover {
     background-color: #1abc9c;
+}
+
+.btn-index-active {
+    background-color: #8e44ad;
+    padding: 15px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.output-box {
+    background-color: #eef7fc;
+    border: 1px dashed #3498db;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    min-height: 35px;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 15px;
+   
 }
 
 .pindex {
@@ -122,12 +141,8 @@ main .videomain {
     margin: 20px auto;
 }
 
-.form-group {
-    margin-bottom: 15px;
-}
-
 .form-group label {
-    display: block;
+    display: inline-block;
     margin-bottom: 5px;
 }
 
@@ -137,6 +152,9 @@ main .videomain {
     border: 1px solid #ccc;
     border-radius: 100px;
     box-sizing: border-box;
+      flex: 1;
+            min-width: 220px;
+            margin-bottom: 12px;
 }
 
 /* الأزرار وتأثير Hover */
@@ -186,7 +204,7 @@ footer {
 
 .floors-navigation a {
     text-decoration: none;
-   margin-top: 10px;
+    margin-top: 10px;
 }
 
 .floor-buttons, .shop-buttons {
@@ -202,24 +220,16 @@ footer {
     color: #fff;
     padding: 10px 18px;
     border-radius: 20px;
-    border-radius: 20px;
     cursor: pointer;
     font-weight: bold;
-    
-        text-decoration: none;
-    
-   
+    text-decoration: none;
     transition: all 0.3s ease;
-   
 }
-
 
 .floor-btn:hover, .shop-btn:hover {
     background-color: #1abc9c;
-   
 }
 
 .floor-btn.active, .shop-btn.active {
     background-color: #8e44ad;
-   
 }

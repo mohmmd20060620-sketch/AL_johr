@@ -40,9 +40,10 @@
 
         <section class="floors-navigation">
             <div class="shop-buttons">
-                       <a href="shop-food-crspy.html" class="shop-btn">مطاعم كرسبي ميلز</a>
+                <a href="shop-food-crspy.html" class="shop-btn">مطاعم كرسبي ميلز</a>
                 <a href="shop-joy-play.html" class="shop-btn active">ملاهي Joy Land للأطفال</a>
                 <a href="shop-costa.html" class="shop-btn">كافية كوستا</a>
+            </div>
         </section>
 
         <!-- زر العودة للطابق الثالث -->
@@ -52,32 +53,34 @@
 
         <!-- محتوى ملاهي Joy Land للأطفال -->
         <section class="shop-content active-shop">
-             <div class="اسماء-المحلات">
-                        
-            <h3>ملاهي Joy Land للأطفال</h3>
-                    <img class="شعار-المحلات" src="شعار صالة الالعاب.jpeg" alt="شعار كوستا">
-                </div>jpg" alt="شعار كوستا">
-                </div>
-           
+            <div class="اسماء-المحلات">
+                <h3>ملاهي Joy Land للأطفال</h3>
+                <img class="شعار-المحلات" src="شعار صالة الالعاب.jpeg" alt="شعار صالة الألعاب">
+            </div>
+
             <div class="product-grid">
-                    <div class="product-card">
-                        <img class="صور-المنتجات" src="لعبة سيارة.jpg" alt="سلاش">
-                        <h4> لعبة سيارة</h4>
-                        <p>السعر: 1000 ريال</p>
-                        <button class="add-to-cart-btn">أضف للسلة</button>
+                <div class="product-card" id="product-joy-play-1">
+                    <img class="صور-المنتجات" src="لعبة سيارة.jpg" alt="لعبة سيارة">
+                    <h4> لعبة سيارة</h4>
+                    <p>السعر: 1000 ريال</p>
+                    <div class="qty-container" style="margin-bottom: 8px;">
+                        <label>الكمية: </label>
+                        <input type="number" id="qty-joy-play-1" value="1" min="1" style="width: 50px; text-align: center;">
                     </div>
+                    <button class="add-to-cart-btn" onclick="toggleCartItem('joy-play-1', 'لعبة سيارة', 1000, 'ملاهي Joy Land للأطفال', document.getElementById('qty-joy-play-1').value, this)">إضافة إلى السلة</button>
+                </div>
 
-                       <div class="product-card">
-                        <img class="صور-المنتجات" src="لعبة الحظ.jpg" alt="سلاش">
-                        <h4>مشروبات سلاش</h4>
-                        <p>السعر: 400 ريال</p>
-                        <button class="add-to-cart-btn">أضف للسلة</button>
+                <div class="product-card" id="product-joy-play-2">
+                    <img class="صور-المنتجات" src="لعبة الحظ.jpg" alt="لعبة الحظ">
+                    <h4> لعبة الحظ</h4>
+                    <p>السعر: 400 ريال</p>
+                    <div class="qty-container" style="margin-bottom: 8px;">
+                        <label>الكمية: </label>
+                        <input type="number" id="qty-joy-play-2" value="1" min="1" style="width: 50px; text-align: center;">
                     </div>
-                    </div>
-
-
-
-            
+                    <button class="add-to-cart-btn" onclick="toggleCartItem('joy-play-2', 'لعبة الحظ', 400, 'ملاهي Joy Land للأطفال', document.getElementById('qty-joy-play-2').value, this)">إضافة إلى السلة</button>    
+                </div>
+            </div>
         </section>
     </main>
 

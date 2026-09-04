@@ -3,62 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>سلة التسوق</title>
+    <title>سلة التسوق - جوهرة تعز مول</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
 
     <header>
         <div class="divheader">
-            
             <h1> جوهرة تعز مول - الحوبان</h1>
-            <img class="imgheader" src="شعار جوهرة تعز.jpg">
-            
-
+            <img class="imgheader" src="شعار جوهرة تعز.jpg" alt="شعار المول">
         </div>
-    
-    <p>سلة التسوق الخاصة بك</p>
-    <nav>
-        <ul>
-            <li><a href="index.html">الرئيسية</a></li>
-            <li><a href="products.html">تصنيفات المحلات</a></li>
-            <li><a href="cart.html">سلة التسوق</a></li>
-            <li><a href="orders.html">سجل الطلبات</a></li>
-            <li><a href="login.html">تسجيل الدخول</a></li>
-        </ul>
-    </nav>
-</header>
-  
+        <p>تصفح المحلات والمنتجات حسب الطابق والمحل</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="products.html">تصنيفات المنتجات</a></li>
+                <li><a href="cart.html">سلة التسوق</a></li>
+                <li><a href="orders.html">سجل الطلبات</a></li>
+                <li><a href="login.html">تسجيل الدخول</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main>
         <h2>سلة التسوق الخاصة بك</h2>
+ <div class="cart-actions" style="margin-bottom: 15px;">
+    <!-- زر معاينة تفاصيل السلة -->
+    <button class="btn btn-info" onclick="previewCartDetails()">معاينة تفاصيل السلة</button>
+    
+    <!-- زر إفراغ السلة -->
+    <button class="btn btn-danger" onclick="clearCart()">إفراغ السلة</button>
+    
+    <!-- زر تأكيد وإتمام الطلب -->
+    <button style="background-color: green; color: white; padding: 10px 20px; border-radius: 20px; cursor: pointer;" class="btn btn-success" onclick="checkout()">تأكيد وإتمام الطلب</button>
+</div>
+        
         <table class="data-table">
-            <caption>قائمة المنتجات المضافة للسلة وإجمالي التكلفة</caption>
             <thead>
                 <tr>
-                    <th>المنتج</th>
+                    <th>اسم المنتج</th>
+                    <th>المحل / الماركة</th>
                     <th>الكمية</th>
-                    <th>السعر</th>
+                    <th>السعر الفردي</th>
+                    <th>الإجمالي</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td>سماعات لاسلكية</td>
-                    <td>1</td>
-                    <td>50 دولار</td>
-                </tr>
-                <tr>
-                    <td>ساعة ذكية</td>
-                    <td>1</td>
-                    <td>120 دولار</td>
-                </tr>
+            <tbody id="cartTableBody">
             </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="4">التكلفة الإجمالية:</th>
+                    <th id="cartTotalPrice">0 ريال</th>
+                </tr>
+            </tfoot>
         </table>
+
+        <!-- النافذة المنبثقة Modal -->
+        <div id="cartModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); align-items:center; justify-content:center;">
+            <div style="background:#fff; padding:20px; border-radius:10px; text-align:center; min-width:250px;">
+                <h3>تفاصيل السلة</h3>
+                <div id="cartItemsList"></div>
+                <p id="cartTotalCost"></p>
+                <button onclick="closeCartModal()">إغلاق</button>
+            </div>
+        </div>
     </main>
 
     <footer>
         <p>&copy; 2026 جميع الحقوق محفوظة - جوهرة تعز مول (الحوبان)</p>
     </footer>
-    <script src="script.js"></script>
+
 </body>
 </html>

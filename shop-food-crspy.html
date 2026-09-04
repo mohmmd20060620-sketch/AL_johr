@@ -27,7 +27,6 @@
     </header>
 
     <main>
-        <!-- التناقل بين صفحات الطوابق -->
         <section class="floors-navigation">
             <h2>اختر الطابق للتصفح:</h2>
             <div class="floor-buttons">
@@ -40,18 +39,17 @@
 
         <section class="floors-navigation">
             <div class="shop-buttons">
-                      <a href="shop-food-crspy.html" class="shop-btn active">مطاعم كرسبي ميلز</a>
+                <a href="shop-food-crspy.html" class="shop-btn active">مطاعم كرسبي ميلز</a>
                 <a href="shop-joy-play.html" class="shop-btn">ملاهي Joy Land للأطفال</a>
                 <a href="shop-costa.html" class="shop-btn">كافية كوستا</a>
+            </div>
         </section>
 
         <section>
-            <!-- زر العودة للطابق الثالث -->
             <div>
                 <a href="third-floor.html" class="floor-btn">&rarr; العودة للطابق الثالث</a>
             </div>
 
-            <!-- محتوى مطاعم كرسبي ميلز -->
             <section class="shop-content active-shop">
                 <div class="اسماء-المحلات">
                     <h3>مطاعم كرسبي ميلز</h3>
@@ -59,24 +57,45 @@
                 </div>
                 
                 <div class="product-grid">
-                    <div class="product-card">
+                    <div class="product-card" id="product-crispy-1">
                         <img class="صور-المنتجات" src="ملفوف صاج كرسبي.jpg" alt="وجبة برجر">
                         <h4>ملفوف صاج كرسبي</h4>
                         <p>السعر: 500 ريال</p>
-                        <button class="add-to-cart-btn">أضف للسلة</button>
+                        <div class="qty-container" style="margin-bottom: 8px;">
+        <label>الكمية: </label>
+        <input type="number" id="qty-crispy-1" value="1" min="1" style="width: 50px; text-align: center;">
+    </div>
+
+                      <!-- الترتيب: (id, name, price, storeName, qty, this) -->
+    <button onclick="toggleCartItem('crispy-1', 'ملفوف صاج كرسبي', 500, 'مطاعم كرسبي ميلز', document.getElementById('qty-crispy-1').value, this)">إضافة إلى السلة</button>
                     </div>
-                    <div class="product-card">
+                    
+                    <div class="product-card" id="product-crispy-2">
                         <img class="صور-المنتجات" src="شبس كرسبي ميلز.jpg" alt="شبس">
                         <h4>شبس كرسبي ميلز</h4>
                         <p>السعر: 500 ريال</p>
-                        <button class="add-to-cart-btn">أضف للسلة</button>
+                        <div class="qty-container" style="margin-bottom: 8px;">
+                            <label>الكمية: </label>
+                            <input type="number" id="qty-crispy-2" value="1" min="1" style="width: 50px; text-align: center;">
+                        </div>
+
+                        <button onclick="toggleCartItem('crispy-2', 'شبس كرسبي ميلز', 500, 'مطاعم كرسبي ميلز', document.getElementById('qty-crispy-2').value, this)">إضافة إلى السلة</button>
                     </div>
-                    <div class="product-card">
+                    
+                    <div class="product-card" id="product-crispy-3">
                         <img class="صور-المنتجات" src="فطيرة كرسبي.jpg" alt="فطيرة">
                         <h4>فطيرة كرسبي</h4>
                         <p>السعر: 800 ريال</p>
-                        <button class="add-to-cart-btn">أضف للسلة</button>
+                        <div class="qty-container" style="margin-bottom: 8px;">
+                            <label>الكمية: </label>
+                            <input type="number" id="qty-crispy-3" value="1" min="1" style="width: 50px; text-align: center;">
+                        </div>
+
+                        <button onclick="toggleCartItem('crispy-3', 'فطيرة كرسبي', 800, 'مطاعم كرسبي ميلز', document.getElementById('qty-crispy-3').value, this)">إضافة إلى السلة</button>
                     </div>
+
+
+
                 </div>
             </section>
         </section>

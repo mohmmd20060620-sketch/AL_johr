@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل  / حساب جديد</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="divheader">
+            
+            <h1> جوهرة تعز مول - الحوبان</h1>
+            <img class="imgheader" src="شعار جوهرة تعز.jpg">
+            
+
+        </div>
+    
+     <p>تسجيل  / حساب جديد</p>
+    <nav>
+        <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="products.html">تصنيفات المحلات</a></li>
+            <li><a href="cart.html">سلة التسوق</a></li>
+            <li><a href="orders.html">سجل الطلبات</a></li>
+            <li><a class="btn-index-active" href="login.html">تسجيل الدخول</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <main>
+        <section class="form-container">
+            <h2>تسجيل  / حساب جديد</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="fullname">الاسم الكامل:</label>
+                    <input id="username" class="fullname" type="text" required 
+                           onfocus="handleInputFocus(this)" 
+                           onblur="handleInputBlur(this)" 
+                           oninput="handleInputTextChange(this)"
+                           oninvalid="handleInvalidInput(this)">
+                </div>
+                <div class="form-group" >
+                    <label for="age">العمر:</label>
+                    <input class="age" type="number" id="age">
+                </div>
+                <div class="form-group">
+                    <label for="email">البريد الإلكتروني:</label>
+                    <input  class="email" type="email" required 
+                           onfocus="handleInputFocus(this)" 
+                           onblur="handleInputBlur(this)" 
+                           oninput="handleInputTextChange(this)"
+                           oninvalid="handleInvalidInput(this)">
+                </div>
+<div class="form-group">
+                    <label for="country">اختر الدولة:</label>
+                    <select id="country" onchange="handleSelectChange(this)" required 
+                           onfocus="handleInputFocus(this)" 
+                           onblur="handleInputBlur(this)" 
+                           oninput="handleInputTextChange(this)"
+                           oninvalid="handleInvalidInput(this)">
+                        <option value="">-- اختر --</option>
+                        <option value="السعودية">السعودية</option>
+                        <option value="مصر">مصر</option>
+                        <option value="اليمن">اليمن</option>
+                        <option value="الإمارات">الإمارات</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">رقم الهاتف:</label>
+                    <input  class="phone" type="number">
+                    
+                </div>
+                <div class="form-group">
+                    <label for="user">اسم المستخدم </label>
+                    <input   type="text" required 
+                           onfocus="handleInputFocus(this)" 
+                           onblur="handleInputBlur(this)" 
+                           oninput="handleInputTextChange(this)"
+                           oninvalid="handleInvalidInput(this)">
+                </div>
+
+                <div class="form-group">
+                    <label for="password">كلمة المرور </label>
+                    <input  class="password" type="password" required 
+                           onfocus="handleInputFocus(this)" 
+                           onblur="handleInputBlur(this)" 
+                           oninput="handleInputTextChange(this)"
+                           oninvalid="handleInvalidInput(this)">
+                </div>
+                                <div style="flex-direction: column; ">    
+                    <label>نوع الجنس:</label>
+                    <input type="radio" id="male" name="gender" value="ذكر" onchange="handleRadioChange(this)">
+                    <label  for="male" >ذكر</label>
+                    <input type="radio" id="female" name="gender" value="أنثى" onchange="handleRadioChange(this)">
+                    <label for="female" required>أنثى</label>   
+                </div>
+                 <div style="margin-top: 30px;" class="form-group">
+                    <label>Comments (100 محرف كحد أقصى):</label>
+                    <textarea id="comments" rows="3" oninput="checkCommentsLength(this)"></textarea>
+                </div>
+
+                <div class="form-group">
+                     <label for="terms" style="display:inline;">أوافق على الشروط والأحكام</label>
+                    <input type="checkbox" id="terms" onchange="handleCheckboxChange(this)">
+                   
+                </div>
+
+               <button class="loginaccount" type="submit">تسجيل الحساب</button>
+
+                <button class="hint" type="submit" style=background-color:brown ; >تلميحات</button>
+
+                  <div class="output-box" id="formStatus">حالة النموذج: جاهز للإرسال</div>
+            </div>
+
+            </form>
+        </section>
+    </main>
+
+     <footer>
+        <p>&copy; 2026 جميع الحقوق محفوظة - جوهرة تعز مول (الحوبان)</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
