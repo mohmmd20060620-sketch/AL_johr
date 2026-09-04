@@ -5,6 +5,9 @@ body {
     padding: 0;
     background-color: #f4f6f9;
     color: #333;
+    width: 200%;
+max-width: 800px; /* يمكنك تغيير الرقم حسب الحجم الأقصى المناسب للابتوب */
+margin: 0 auto;
 }
 
 /* تنسيق الهيدر وقائمة التنقل Navigation */
@@ -128,7 +131,7 @@ main {
 }
 
 main .videomain {
-    width: 500px;
+    width: 100%;
 }
 
 /* النماذج Form Styling */
