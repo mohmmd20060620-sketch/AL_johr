@@ -1,0 +1,262 @@
+    <!DOCTYPE html>
+    <html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>تدلل للاكسسوارات والتجميل - جوهرة تعز مول</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+
+        <header>
+        <div class="divheader">
+                <h1> جوهرة تعز مول - الحوبان</h1>
+                <img class="imgheader" src="شعار جوهرة تعز.jpg" alt="شعار المول">
+            </div>
+            <p>تصفح المحلات والمنتجات حسب الطابق والمحل</p>
+            <nav>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="products.html" class="btn-index-active">تصنيفات المنتجات</a></li>
+                    <li><a href="cart.html">سلة التسوق</a></li>
+                    <li><a href="orders.html">سجل الطلبات</a></li>
+                    <li><a href="login.html">تسجيل الدخول</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <!-- التناقل بين صفحات الطوابق -->
+            <section class="floors-navigation">
+                <h2>اختر الطابق للتصفح:</h2>
+                <div class="floor-buttons">
+                    <a href="ground-floor.html" class="floor-btn">Ground Floor - الطابق الأرضي</a>
+                    <a href="first-floor.html" class="floor-btn active">First Floor - الطابق الأول</a>
+                    <a href="second-floor.html" class="floor-btn">Second Floor - الطابق الثاني</a>
+                    <a href="third-floor.html" class="floor-btn ">Third Floor - الطابق الثالث</a>
+                </div>
+            </section>
+
+            <      <section class="floors-navigation">
+            <div class="shop-buttons">
+                <a href="" class="shop-btn active">تدلل للاكسسوارات والتجميل</a>
+
+            
+            </div>
+        </section>
+        
+
+            <section>
+                <div>
+                    <a href="" class="floor-btn">&rarr; العودة للطابق الاول</a>
+
+                </div>
+
+                <!-- محتوى كافية كوستا -->
+                <section class="shop-content active-shop">
+                    <div class="اسماء-المحلات">
+                        <h3>تدلل للاكسسوارات والتجميل</h3>
+                        <img class="شعار-المحلات" src="شعار تدلل للاكسسوارات والتجميل.jpg" alt="شعار تدلل للاكسسوارات والتجميل">
+                    </div>
+
+                    <div class="product-grid" >
+                        <div class="product-card" id="product-tdlal-1">
+                            <img class="صور-المنتجات" src="تدلل مزيل عرق ليدي امريكي.jpg" alt="مزيل عرق ليدي امريكي">
+                            <h4>مزيل عرق ليدي امريكي</h4>
+                            <p>السعر: 1800 ريال</p>
+                            <div class="qty-container" style="margin-bottom: 8px;">
+                                <label>الكمية: </label>
+                                <input type="number" id="qty-tdlal-1" value="1" min="1" style="width: 50px; text-align: center;">
+                            </div>    
+                            <button class="add-to-cart-btn" onclick="toggleCartItem('tdlal-1', 'مزيل عرق ليدي امريكي', 1800, 'تدلل للاكسسوارات والتجميل', document.getElementById('qty-tdlal-1').value, this)">إضافة إلى السلة</button>
+                        </div>
+                        
+                        <div class="product-card" id="product-tdlal-2">
+                                <img class="صور-المنتجات" src="تدلل مزيل عرق التراء مكس كل الاحجام.jpg" alt="مزيل عرق التراء مكس">
+                            <h4>مزيل عرق التراء مكس</h4>
+                            <p>السعر: 1800 ريال</p>
+                            <div class="qty-container" style="margin-bottom: 8px;">
+                                <label>الكمية: </label>
+                                <input type="number" id="qty-tdlal-2" value="1" min="1" style="width: 50px; text-align: center;">
+                            </div>
+                            <button class="add-to-cart-btn" onclick="toggleCartItem('tdlal-2', 'مزيل عرق التراء مكس', 1800, 'تدلل للاكسسوارات والتجميل', document.getElementById('qty-tdlal-2').value, this)">إضافة إلى السلة</button>
+                        </div>
+
+                        <div class="product-card" id="product-tdlal-3">
+                                <img class="صور-المنتجات" src="تدلل واقي شمس كوري الاصلي .jpg" alt="واقي شمس كوري الاصلي">
+                            <h4>واقي شمس كوري الاصلي</h4>
+                            <p>السعر: 3800 ريال</p>
+                            <div class="qty-container" style="margin-bottom: 8px;">
+                                <label>الكمية: </label>
+                                <input type="number" id="qty-tdlal-3" value="1" min="1" style="width: 50px; text-align: center;">
+                            </div>
+                            <button class="add-to-cart-btn" onclick="toggleCartItem('tdlal-3', 'واقي شمس كوري الاصلي', 3800, 'تدلل للاكسسوارات والتجميل', document.getElementById('qty-tdlal-3').value, this)">إضافة إلى السلة</button>
+                        </div>
+
+                        <div class="product-card" id="product-tdlal-4">
+                                <img class="صور-المنتجات" src="تدلل كريم تفتيح كينتاء الاصلي.jpg" alt="كريم تفتيح كينتاء الاصلي">
+                            <h4>كريم تفتيح كينتاء الاصلي</h4>
+                            <p>السعر: 2500 ريال</p>
+                            <div class="qty-container" style="margin-bottom: 8px;">
+                                <label>الكمية: </label>
+                                <input type="number" id="qty-tdlal-4" value="1" min="1" style="width: 50px; text-align: center;">
+                            </div>
+                            <button class="add-to-cart-btn" onclick="toggleCartItem('tdlal-4', 'كريم تفتيح كينتاء الاصلي', 2500, 'تدلل للاكسسوارات والتجميل', document.getElementById('qty-tdlal-4').value, this)">إضافة إلى السلة</button>
+                        </div>
+
+                        <div class="product-card" id="product-tdlal-5">
+                                <img class="صور-المنتجات" src="تدلل غسول نيتروجينا الاصلي.jpg" alt="غسول نيتروجينا الاصلي">
+                            <h4>غسول نيتروجينا الاصلي</h4>
+                            <p>السعر: 3000 ريال</p>
+                            <div class="qty-container" style="margin-bottom: 8px;">
+                                <label>الكمية: </label>
+                                <input type="number" id="qty-tdlal-5" value="1" min="1" style="width: 50px; text-align: center;">
+                            </div>
+                            <button class="add-to-cart-btn" onclick="toggleCartItem('tdlal-5', 'غسول نيتروجينا الاصلي', 3000, 'تدلل للاكسسوارات والتجميل', document.getElementById('qty-tdlal-5').value, this)">إضافة إلى السلة</button>
+                        </div>
+
+                        <div class="product-card" id="product-tdlal-6">
+                                <img class="صور-المنتجات" src="تدلل فازلين مرطب شفايف علب الاصلي.jpg" alt="فازلين مرطب شفايف علب الاصلي">
+                            <h4>فازلين مرطب شفايف علب الاصلي</h4>
+                            <p>السعر: 1200 ريال</p>
+                            <div class="qty-container" style="margin-bottom: 8px;">
+                                <label>الكمية: </label>
+                                <input type="number" id="qty-tdlal-6" value="1" min="1" style="width: 50px; text-align: center;">
+                            </div>
+                            <button class="add-to-cart-btn" onclick="toggleCartItem('tdlal-6', 'فازلين مرطب شفايف علب الاصلي', 1200, 'تدلل للاكسسوارات والتجميل', document.getElementById('qty-tdlal-6').value, this)">إضافة إلى السلة</button>
+                        </div>
+
+
+                            <div class="product-card" id="product-tdlal-7">
+                                <img class="صور-المنتجات" src="تدلل كريم تبييض كاب صغير الاصلي.jpg" alt="كريم تبييض كاب صغير الاصلي">
+                                <h4>كريم تبييض كاب صغير الاصلي</h4>
+                                <p>السعر: 3500 ريال</p>
+                                <div class="qty-container" style="margin-bottom: 8px;">
+                                    <label>الكمية: </label>
+                                    <input type="number" id="qty-tdlal-7" value="1" min="1" style="width: 50px; text-align: center;">
+                                </div>
+                                <button class="add-to-cart-btn" onclick="toggleCartItem('tdlal-7', 'كريم تبييض كاب صغير الاصلي', 3500, 'تدلل للاكسسوارات والتجميل', document.getElementById('qty-tdlal-7').value, this)">إضافة إلى السلة</button>
+                            </div>
+
+                            <div class="product-card" id="product-tdlal-8">
+                                <img class="صور-المنتجات" src="تدلل زيت السعد والورد اصلي سعودي.jpg" alt="زيت السعد والورد اصلي سعودي"> 
+                                <h4>زيت السعد والورد اصلي سعودي</h4>
+                                <p>السعر: 5000  ريال</p>
+                                <div class="qty-container" style="margin-bottom: 8px;">
+                                    <label>الكمية: </label>
+                                    <input type="number" id="qty-tdlal-8" value="1" min="1" style="width: 50px; text-align: center;">
+                                    </div>
+                                <button class="add-to-cart-btn" onclick="toggleCartItem('tdlal-8', 'زيت السعد والورد اصلي سعودي', 5000, 'تدلل للاكسسوارات والتجميل', document.getElementById('qty-tdlal-8').value, this)">إضافة إلى السلة</button>
+                           
+                                </div>
+                          
+
+                            <div class="product-card" id="product-tdlal-9">
+                                <img class="صور-المنتجات" src="تدلل مقشر سكينورين الاصلي.jpg" alt="مقشر سكينورين الاصلي">
+                                <h4>مقشر سكينورين الاصلي</h4>
+                                <p>السعر: 5500 ريال</p>
+                                <div class="qty-container" style="margin-bottom: 8px;">
+                                    <label>الكمية: </label>
+                                    <input type="number" id="qty-tdlal-9" value="1" min="1" style="width: 50px; text-align: center;">
+                                </div>
+                                <button class="add-to-cart-btn" onclick="toggleCartItem('tdlal-9', 'مقشر سكينورين الاصلي', 5500, 'تدلل للاكسسوارات والتجميل', document.getElementById('qty-tdlal-9').value, this)">إضافة إلى السلة</button>
+                            </div>
+
+
+                              <div class="product-card" id="product-tdlal-10">
+                                <img class="صور-المنتجات" src="تدلل مزيل عرق تفتيح بزلين الاصلي.jpg" alt="مزيل عرق تفتيح بزلين الاصلي">
+                                <h4>مزيل عرق تفتيح بزلين الاصلي</h4>
+                                <p>السعر: 6500 ريال</p>
+                                <div class="qty-container" style="margin-bottom: 8px;">
+                                    <label>الكمية: </label>
+                                    <input type="number" id="qty-tdlal-10" value="1" min="1" style="width: 50px; text-align: center;">
+                                </div>
+                                <button class="add-to-cart-btn" onclick="toggleCartItem('tdlal-10', 'مزيل عرق تفتيح بزلين الاصلي', 6500, 'تدلل للاكسسوارات والتجميل', document.getElementById('qty-tdlal-10').value, this)">إضافة إلى السلة</button>
+                            </div>
+
+                            <div class="product-card" id="product-tdlal-11">
+                                <img class="صور-المنتجات" src="تدلل معطر جسم كولونيا فلبيني.jpg" alt="معطر جسم كولونيا فلبيني">
+                                <h4>معطر جسم كولونيا فلبيني</h4>
+                                <p>السعر: 2000 ريال</p>
+                                <div class="qty-container" style="margin-bottom: 8px;">
+                                    <label>الكمية: </label>
+                                    <input type="number" id="qty-tdlal-11" value="1" min="1" style="width: 50px; text-align: center;">
+                                </div>
+                                <button class="add-to-cart-btn" onclick="toggleCartItem('tdlal-11', 'معطر جسم كولونيا فلبيني', 2000, 'تدلل للاكسسوارات والتجميل', document.getElementById('qty-tdlal-11').value, this)">إضافة إلى السلة</button>
+                            </div>
+                            
+                            <div class="product-card" id="product-tdlal-12">
+                                <img class="صور-المنتجات" src="تدلل الليفة الكورية.jpg" alt="الليفة الكورية">
+                                <h4>الليفة الكورية</h4>
+                                <p>السعر: 1500 ريال</p>
+                                <div class="qty-container" style="margin-bottom: 8px;">
+                                    <label>الكمية: </label>
+                                    <input type="number" id="qty-tdlal-12" value="1" min="1" style="width: 50px; text-align: center;">
+                                </div>
+                                <button class="add-to-cart-btn" onclick="toggleCartItem('tdlal-12', 'الليفة الكورية', 1500, 'تدلل للاكسسوارات والتجميل', document.getElementById('qty-tdlal-12').value, this)">إضافة إلى السلة</button>
+                            </div>
+                            
+                            <div class="product-card" id="product-tdlal-13">
+                                <img class="صور-المنتجات" src="تدلل EQQUAL BERRY-NAD+PEPTIDE Boosting Serum.jpg" alt="EQQUAL BERRY-NAD+PEPTIDE Boosting Serum">
+                                <h4>EQQUAL BERRY-NAD+PEPTIDE Boosting Serum</h4>
+                                <p>السعر: 10000 ريال</p>
+                                <div class="qty-container" style="margin-bottom: 8px;">
+                                    <label>الكمية: </label>
+                                    <input type="number" id="qty-tdlal-13" value="1" min="1" style="width: 50px; text-align: center;">
+                                </div>
+                                <button class="add-to-cart-btn" onclick="toggleCartItem('tdlal-13', 'EQQUAL BERRY-NAD+PEPTIDE Boosting Serum', 10000, 'تدلل للاكسسوارات والتجميل', document.getElementById('qty-tdlal-13').value, this)">إضافة إلى السلة</button>
+                            </div>
+
+                            <div class="product-card" id="product-tdlal-14">
+                                <img class="صور-المنتجات" src="تدلل  CLCAPLAST BAUME B5+.jpg" alt="CLCAPLAST BAUME B5+">
+                                <h4>CLCAPLAST BAUME B5+</h4>    
+                                <p>السعر: 7000 ريال</p>
+                                <div class="qty-container" style="margin-bottom: 8px;">
+                                    <label>الكمية: </label>
+                                    <input type="number" id="qty-tdlal-14" value="1" min="1" style="width: 50px; text-align: center;">
+                                </div>
+                                <button class="add-to-cart-btn" onclick="toggleCartItem('tdlal-14', 'CLCAPLAST BAUME B5+', 7000, 'تدلل للاكسسوارات والتجميل', document.getElementById('qty-tdlal-14').value, this)">إضافة إلى السلة</button>
+                            </div>
+
+                            <div class="product-card" id="product-tdlal-15">
+                                <img class="صور-المنتجات" src="تدلل زيت الاغان المغربي.jpg" alt="تدلل زيت الاغان المغربي">
+                                <h4> زيت الاغان المغربي</h4>
+                                <p>السعر: 7500 ريال</p>
+                                <div class="qty-container" style="margin-bottom: 8px;">
+                                    <label>الكمية: </label>
+                                    <input type="number" id="qty-tdlal-15" value="1" min="1" style="width: 50px; text-align: center;">
+                                </div>
+                                <button class="add-to-cart-btn" onclick="toggleCartItem('tdlal-15', 'تدلل زيت الاغان المغربي', 7500, 'تدلل للاكسسوارات والتجميل', document.getElementById('qty-tdlal-15').value, this)">إضافة إلى السلة</button>
+                                
+                            </div>
+
+                            <div class="product-card" id="product-tdlal-16">
+                                    <img class="صور-المنتجات" src="تدلل غسول بيوديرما.jpg" alt=" غسول بيوديرما">
+                                    <h4> غسول بيوديرما</h4>
+                                    <p>السعر: 7500 ريال</p>
+                                    <div class="qty-container" style="margin-bottom: 8px;">
+                                        <label>الكمية: </label>
+                                        <input type="number" id="qty-tdlal-16" value="1" min="1" style="width: 50px; text-align: center;">
+                                    </div>
+                                    <button class="add-to-cart-btn" onclick="toggleCartItem('tdlal-16', ' غسول بيوديرما', 7500, 'تدلل للاكسسوارات والتجميل', document.getElementById('qty-tdlal-16').value, this)">إضافة إلى السلة</button>
+                                    
+                                </div>
+
+                            
+
+
+
+
+                       
+                    </div>
+                </section>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 جميع الحقوق محفوظة - جوهرة تعز مول (الحوبان)</p>
+        </footer>
+
+    </body>
+    </html>
